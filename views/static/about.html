@@ -1,0 +1,24 @@
+<%- partial('../sidebar') %>
+
+<div id='content'>
+  <div class='panel'>
+    <div class='header'>
+      <ul class='breadcrumb'>
+        <li><a href='/'>主页</a><span class='divider'>/</span></li>
+        <li class='active'>关于</li>
+      </ul>
+    </div>
+    <div class='inner topic'>
+      <div class="topic_content">
+        <%- markdown(multiline(function () {
+/*
+### 关于
+keepDL 社区致力于共享开源免费且高质量的关于 `AI`、`ML`、`DL` 等方面的技术。希望大家能一起进步。
+
+社区目前由 [@laravue](http://keepdl.org/user/laravue) 在维护，有问题请联系：`root@laravue.org`
+*/
+        })) %>
+      </div>
+    </div>
+  </div>
+</div>
